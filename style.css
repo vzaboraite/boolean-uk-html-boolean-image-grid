@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #001533;
+}
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* General css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+header,
+footer {
+  height: 80px;
+  background-color: var(--primary-color);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  padding: 15px 0 15px 30px;
+}
+
+.logo {
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 1rem;
+
+  justify-items: center;
+  justify-content: center;
+
+  max-width: 1250px;
+  margin: 30px auto;
+}
+
+.card {
+  border: 2px solid var(--primary-color);
+  border-radius: 2%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.card .logo {
+  height: 40px;
+}
+
+.cards li {
+  list-style-type: none;
+}
+
+.logo.top-right {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.social-media-icons img {
+  height: 30px;
+}
+
+.social-media-icons {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  gap: 4px;
+
+  justify-content: right;
+
+  padding: 8px;
+}
+
+.card p {
+  padding: 15px;
+}
